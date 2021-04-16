@@ -42,7 +42,7 @@ function flattenObject(ob) {
                 }
 
                 toReturn[i + '.' + x] = flatObject[x];   //after backtracking 1st time frm recursive call =>toReturn[obj5.one]=1
-                console.log(toReturn)
+                // console.log(toReturn)
             }
         } else {                                      //if the element in the iteration is not a object(or is a normal property)) or null
             toReturn[i] = ob[i]; //returns { one: 1 } and during 2nd iteration while ob isobj3 it returns { two: 2 }
